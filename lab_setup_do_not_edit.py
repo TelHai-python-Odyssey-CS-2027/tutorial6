@@ -30,21 +30,17 @@ def _aggressive_reloader(info):
                 except Exception:
                     pass
     except Exception:
-        # Never break the student's cell because of the reloader.
         return
 
 
 def _activate_autoreload():
     ip = get_ipython()
-
     if ip is None:
         return
-
     try:
         ip.events.unregister("pre_run_cell", _aggressive_reloader)
     except ValueError:
         pass
-
     ip.events.register("pre_run_cell", _aggressive_reloader)
     print("✅ Environment ready! Code will update automatically.")
 

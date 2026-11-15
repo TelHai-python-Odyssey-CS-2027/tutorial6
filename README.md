@@ -1,29 +1,27 @@
-# Tutorial 6 — Files (read / write / parse)
+# Tutorial 6 — Files, DNA histograms, and scraping
 
-Practice for lecture 6: opening text files, `readlines` / `strip` / `split`, building a dictionary from a TSV, and writing a filtered file.
+Practice for lecture 6: reading text files, building / plotting histograms, and a first look at HTML scraping.
 
 **Colab from GitHub:** use **Ctrl+click** / **⌘+click** (or middle-click) so Colab opens in a new tab.
 
-- <a href="https://colab.research.google.com/github/TelHai-python-Odyssey-CS-2027/tutorial6/blob/main/file_basics.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="File basics"/></a> `file_basics.ipynb`
-- <a href="https://colab.research.google.com/github/TelHai-python-Odyssey-CS-2027/tutorial6/blob/main/codon_practice.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Codon practice"/></a> `codon_practice.ipynb`
+- <a href="https://colab.research.google.com/github/TelHai-python-Odyssey-CS-2027/tutorial6/blob/main/histogram.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Histogram"/></a> `histogram.ipynb`
+- <a href="https://colab.research.google.com/github/TelHai-python-Odyssey-CS-2027/tutorial6/blob/main/scraping.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Scraping"/></a> `scraping.ipynb`
 
 ## Files
 
 | File | Role |
 | --- | --- |
-| `file_basics.ipynb` | Read a patient TSV, write high-HR rows |
-| `codon_practice.ipynb` | Guided walk-through toward PS6 |
-| `file_utils.py` | Put your finished tutorial functions here |
-| `data/patients.tsv` | Sample medical table |
-| `data/codons.txt` | Codon → amino-acid table (also used in PS6) |
-| `self_checks.py` | Self-check helpers for the file-basics notebook |
+| `histogram.ipynb` | Read DNA text files and compare histograms |
+| `scraping.ipynb` | Scrape an HTML codon table |
+| `histogram_utils.py` | Ready-made `build_histogram` / `plot_histogram` |
+| `data/dna.txt` | Sample DNA sequence |
+| `data/mutate_dna.txt` | Mutated DNA sequence |
 | `lab_setup_do_not_edit.py` | Auto-reloads local modules (do not edit) |
 
 ## How to work
 
-1. Open the notebooks in Colab (buttons above) or locally.
-2. Complete `file_basics.ipynb` first, then optionally `codon_practice.ipynb`.
-3. Copy finished functions into `file_utils.py`.
+1. Start with `histogram.ipynb`: load files, write `read_file`, plot DNA vs mutated DNA.
+2. Then open `scraping.ipynb` for HTML → dictionary practice (useful background for PS6).
 
 No commit and no submission are required for this tutorial.
 
